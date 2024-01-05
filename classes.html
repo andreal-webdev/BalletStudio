@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Toronto Ballet Studio</title>
+        <meta name="description" content="In The Toronto Ballet Studio we offer ballet classes for different ages and experience. We are one of the best ballet schools according to The Toronto Choice Awards. This is place to express yourself">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">       
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/lightbox.css">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Actor&display=swap" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        
+        <nav class="navbar">
+            <span class="open-slide" style="float:left">
+                <a href="#" onclick="openSideMenu()">
+                    <svg width="30" height="30">
+                        <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+                        <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+                        <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+                    </svg>
+                </a>
+            </span>
+            
+            <ul class="navbar-nav" >
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="classes.html">Classes</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+
+        <div id="side-menu" class="side-nav">
+            <a href="#" class="btn-close" onclick="closeSideMenu()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="classes.html">Classes</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        
+        <div id="home-h" class="home">
+            <header>
+                
+                <video width="400" autoplay="autoplay" loop="loop" muted>
+                    <source src="video/class.mp4" type="video/mp4">
+                    <!--not sure why I did this-->
+                    <source src="video/class.mp4" type="video/ogg">
+                    Your browser does not support HTML5 video.
+                </video>
+                
+            </header>            
+        </div>
+
+        <h1 class="tittle">Our classes</h1> 
+
+        <div class="classes">
+                       
+
+            <div class="class">
+                <img src="img/kids.jpg" alt=" "height="260px" width="380px">
+                <h1>Kids Ballet</h1>                
+                <p>Absolute beginners for kids from 3 to 5 years old</p>
+                <button>Sign Up</button>
+            </div>
+
+            <div class="class">
+                <img src="img/elem1.jpeg" alt=" "height="260px" width="380px">
+                <h1>Beginners 1</h1>                
+                <p>Absolute beginners for kids from 5 to 7 years old</p>
+                <button>Sign Up</button>
+            </div>
+
+            <div class="class">
+                <img src="img/kids10.jpeg" alt=" "height="260px" width="380px">
+                <h1>Beginners 2</h1>                
+                <p>Absolute beginners for kids from 7 to 10 years old</p>
+                <button>Sign Up</button>
+            </div>
+
+            <div class="class">
+                <img src="img/intermediate.jpeg" alt=" "height="260px" width="380px">
+                <h1>Intermediate</h1>                
+                <p>Intermediate for kids from 10 to 15 years old</p>
+                <button>Sign Up</button>
+            </div>
+
+            <div class="class">
+                <img src="img/advanced.jpg" alt=" "height="260px" width="380px">
+                <h1>Advanced</h1>                
+                <p>Advanced level for people from 15 years old and</p>
+                <button>Sign Up</button>
+            </div>
+
+            <div class="class">
+                <img src="img/adults.jpg" alt=" "height="260px" width="380px">
+                <h1>Adults</h1>                
+                <p>Ballet for adults, no previous experience necessary</p>
+                <button>Sign Up</button>
+            </div>
+
+        </div> 
+        <!--Lightbox-->
+
+        <h1 class="tittle">Gallery</h1>
+
+        <div class="gallery">
+            <a class="gal" href="img/ballerina.jpeg" data-lightbox="ballet" data-title="Cinderella"><img src="img/ballerina.jpeg" alt="ballerina-cinderella" height="260px" width="380px"></a>
+            <a class="gal" href="img/fairy.jpeg" data-lightbox="ballet" data-title="Night Fairy"><img src="img/fairy.jpeg" alt="balerrina-fairy" height="260px" width="380px"></a>
+            <a class="gal" href="img/group.jpeg" data-lightbox="ballet" data-title="Winter Show"><img src="img/group.jpeg" alt="Group of ballerinas possing" height="260px" width="380px"></a>
+            <a class="gal" href="img/group2.jpeg" data-lightbox="ballet" data-title="Ballerinas"><img src="img/group2.jpeg" alt="Ballerinas" height="260px" width="380px"></a>
+            <a class="gal" href="img/shoes.jpeg" data-lightbox="ballet" data-title="Ballet Shoes"><img src="img/shoes.jpeg" alt="Shoes" height="260px" width="380px"></a>
+            <a class="gal" href="img/legs.jpeg" data-lightbox="ballet" data-title="Releve"><img src="img/legs.jpeg" alt="Releve pose" height="260px" width="380px"></a>
+       </div>
+
+
+       <footer>
+            <div class="footer-content">
+                <h3>Hours of Operation</h3>
+                <p><b>Mon-Fri</b><br>8am-8pm</p> 
+                
+                <ul class="social">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa fa-youtube"></i></a></li>                        
+
+                </ul>                   
+                
+            </div>  
+        </footer>
+    
+        <div class="footer-bottom">
+            <p>copyright &copy;2023 TorontoBalletStudio design by <span>Andrea Larsen</span></p>
+        </div>
+
+
+
+        <script src="lightbox-plus-jquery.min.js"></script>
+        <script src="script.js"></script>
+        
+        
+    </body>
+    
+    
+</html>

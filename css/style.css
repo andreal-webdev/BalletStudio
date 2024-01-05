@@ -1,0 +1,566 @@
+/*Defaults*********************************************/
+html{
+    margin: 0;
+    font-family: 'Actor', sans-serif;
+    background-color: #fce5e3a4;
+   
+}
+
+body{
+    margin: 0;    
+    width: 100%;
+    overflow-x: hidden;
+}
+
+button, .button{
+    font-size: 13px;
+    font-weight: 20;
+    background-color: #b8928fa4;
+    color: #ffffff;
+    border: 1px solid #9c8785cb;
+    border-radius: 15px;  
+    padding: 10px 10px;
+    cursor: pointer;    
+    margin-top: 10px;
+
+}
+
+/*psudo class*/
+button:hover, button.contact-btn:hover{
+    background-color: #f1a29e;
+    color: #ffff;
+}
+
+button:active, button.contact-btn:active{
+    background-color: #e4a09aa4;
+    color: #ffffff;
+}
+
+h1, h3{
+    font-family: 'Dancing Script';
+}
+
+/*nav bar*************************************************/
+.navbar {
+    position: sticky;
+    background-color: #cf8a87;
+    overflow: hidden;
+    height: 63px;
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+}
+
+.navbar a {
+    float: right;
+    display: block;    
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;    
+}
+
+.navbar ul {
+    margin: 8px 0 0 0;
+    list-style: none;    
+}
+
+.navbar a:hover{
+    background-color: #db7873;
+    color: #fff;
+}
+/*side navbar**************************************/
+.side-nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1200;
+    top: 0;
+    left: 0;
+    background-color:  #d4b4b3a9;
+    opacity: 20;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.8s;
+    transition-timing-function: ease-in-out;
+}
+
+.side-nav a {
+    padding: 10px 10px 10px 30px;
+    text-decoration: none;
+    font-size: 30px;
+    color: #f8746d;
+    display: block;
+    transition: 0.3s;
+}
+
+.side-nav a:hover {
+    color: #fff;
+}
+
+.side-nav .btn-close {
+    position: absolute;
+    top: 40px;
+    right: 22px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/*Home header****************************************/
+
+.home-header {
+    width: 100%;
+}
+
+.home-header {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;    
+    background-image:url(../img/bg3.jpeg);
+    background-position: center;   
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.home-header h1 {
+    margin-left: 0;
+    text-align: center;    
+    color: #d7837f;
+    font-size: 8em;
+    width: 100%;
+    padding: 0;
+    border: none;
+    background-color: rgba(241, 226, 218, 0.226);    
+    position:absolute;
+    top: 30%;   
+}
+
+
+/*About header**************************************/
+.about-header {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 60vh;    
+    background-image:url(../img/bgabout.jpg);
+    background-position: center;   
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.about-header h1 {
+    margin-left: 0;
+    text-align: center;    
+    color: #d7837f;
+    font-size: 8em;
+    width: 100%;
+    padding: 0;
+    border: none;
+    background-color: rgba(241, 226, 218, 0.226);    
+    position:absolute;
+    top: 15%;   
+}
+
+/*Contact hearder****************************/
+.contact-header{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 60vh;    
+    background-image:url(../img/studio.jpeg);
+    background-position: center;   
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.contact-header h1 {
+    margin-left: 0;
+    text-align: center;    
+    color: #d7837f;
+    font-size: 8em;
+    width: 100%;
+    padding: 0;
+    border: none;
+    background-color: rgba(241, 226, 218, 0.226);    
+    position:absolute;
+    top: 15%;   
+}
+/*section welcome Home Page***************************/
+.welcome, .about-i, .classes{
+    text-align: center;
+    padding: 50px 40px;
+    color: #5f5e5e;
+}
+
+.about-i{
+    font-size: 18px;
+}
+
+.title-wel{
+    font-size: 25px;    
+    color: #bea3a2;
+    
+}
+
+/*section middle*************************/
+.middle{
+    font-family: 'Dancing Script';
+    background-image:url(../img/bg3.jpeg);
+    height: 275px;
+    text-align: center;
+    margin:0;    
+    background-attachment: fixed;
+    color: #d7837f;
+}
+
+section.middle h1{
+    font-size: 2em;
+    padding-top: 130px;
+}
+
+/*flex boxes*******************************************/
+.price, .tittle{
+    margin: 40px;    
+    font-size: 60px;
+    text-align: center;
+    color: #d7837f;
+    text-shadow: 10px 6px 10px #e5d2d1;
+}
+
+.flex{    
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    gap: 5px; 
+    background-image:url(../img/bg3.jpeg);
+    background-repeat: no-repeat;
+    background-position:cover;    
+    background-attachment: fixed;   
+   
+}
+
+.flex div{    
+    background-color:#da8681;
+    color: white;
+    padding: 10px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px #e5d2d1;   
+}
+
+/*Gallery*************************************************/
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin:10px auto 50px; 
+    
+}
+
+.gallery img:hover, .class:hover{
+    opacity: 80%;
+    cursor: pointer;
+
+}
+
+.gallery img{
+    box-shadow: 10px 6px 10px #e5d2d1;
+}
+
+/*About Grid**************************************/
+.teachers{
+    font-size: 35px;    
+    color: #d7837f;
+    text-shadow: 10px 6px 10px #e5d2d1;
+}
+
+.t-h2{
+    font-size: 14px;
+    color: #5f5e5e;
+}
+
+.grid{
+    padding: 30px;
+    display: grid;
+    flex-wrap: wrap;
+    background-color:#e7cccba1;
+    text-align: center;
+    align-items: center;
+    gap: 5px;    
+    color: #5a5959;
+}
+
+.grid img{
+    border-radius: 700px;
+    box-shadow: 10px 10px 20px #bb9694a8;
+}
+
+.grid-teachers{
+    padding:0 50px;
+}
+
+video {
+    width: 100%;
+    height: auto;    
+}
+/**Classes***********************************/
+.classes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;   
+    justify-content: space-evenly;
+    box-shadow: 0 4px 8px 0 #e5d2d1;  
+    background-image:url(../img/bg.jpeg);
+    background-repeat: no-repeat;        
+    background-attachment: fixed;        
+}
+
+.class{    
+    margin: 40px 0px;    
+    background-color: #ddd;
+    padding: 0 0 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 #6b4d4d;  
+}
+
+/*contact us******************************/
+fieldset{    
+    background-color: #e7cccba1;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px #bb9694a8;
+}
+
+.map-msn{
+    display: flex;
+    gap: 30px;
+    justify-content: space-evenly;
+    margin: auto;
+    padding: 80px 0;
+    background-image:url(../img/bg.jpeg);
+    background-repeat: no-repeat;        
+    background-attachment: fixed;    
+}
+
+.map{
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px #bb9694a8;
+}
+.map-msn h3{
+    font-size: 30px;    
+    color: #d7837f;
+    text-shadow: 10px 6px 10px #e5d2d1;
+}
+
+
+.location{
+    text-align: center;
+}
+.location h3{
+    margin: 10px 0;
+}
+
+.location p{
+    color: #5a5959;
+}
+
+label {
+    color: #ac7976;
+    font-size: 18px;
+    margin-bottom: 10px;    
+}
+
+input, #msg{
+    width: 90%;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    resize: none;
+}
+
+input:focus, #msg:focus{
+   outline: 1px solid #d7837f;
+}
+
+#msg{
+    font-family: 'actor';
+}
+
+
+/*footer************************************/
+
+footer{    
+    background-color: #da8681;
+    color: #ddd;
+    display: flex;
+    height:auto;
+    padding: 15px;
+    width: 100%;    
+    color: #ddd;
+}
+
+.footer-content{    
+    display: grid;    
+    margin:0px auto;
+    justify-items: center;
+     
+}
+
+.footer-content h3{  
+    text-align: center;
+    margin: 20px 0px;
+    font-size: 3em;
+    font-weight: 300;    
+}
+
+.footer-content p{
+    text-align: center;
+    max-width: 500px;      
+    font-size: 1.5em; 
+}
+
+
+.footer-bottom{    
+    background-color: #d4b4b3a9;
+    width: 100%;
+    padding: 8px 0;
+    text-align: center;
+}
+
+.footer-bottom p{
+    font-size: 12px;
+    word-spacing: 2px;
+    text-align: center;
+    color: #fff;
+}
+
+
+.footer-bottom span{
+    font-size: 13px;
+    color: rgb(231, 86, 110);
+}
+
+.social{
+    display:flex;   
+}
+
+ul.social{
+    padding-left: 0;
+    list-style: none;
+    align-items: center;           
+}
+
+.social a{
+    text-decoration: none;
+    color: #fff;
+    padding: 15px; 
+}
+
+.social a i{
+    font-size: 2rem; 
+}
+
+/*this is another example of psudo class**************************************/
+.social a:hover i{
+    color:  #faa29d;
+}
+
+Media -------------------------------------------
+
+/* /* @media(max-width:576px){ */
+    .navbar-nav{
+        display: none;
+    }
+
+    .home-header, .about-header, .contact-header {
+        height: 30vh;
+    }
+    .home-header h1, .about-header h1, .contact-header h1, .tittle, .price {
+        font-size: 1.5em;
+    }
+    .middle{
+        font-size: 0.8em;
+    }
+    .about-i{
+        padding: 10px 20px;
+        font-size: 14px;
+
+    }
+    .flex, .gallery{
+        grid-template-columns: 1fr 1fr;
+        
+    }   
+    .grid, .map-msn{
+        grid-template-columns: 1fr;
+        gap: 10px;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    .grid-teachers {
+        text-align: center;
+    }    
+    .grid img {
+        width: 100%;
+        height: auto;
+    }
+    .map iframe {
+        width: 100%; 
+        height: 300px; 
+    }
+    
+} */
+{}
+/*screen smaller than 768px */
+@media screen and (max-width:768px){
+    .home-header, .about-header, .contact-header{
+        height: 40vh;
+    }
+
+    .home-header h1, .about-header h1, .contact-header h1, .tittle, .price{
+        font-size: 2em;
+    }
+
+    .flex, .gallery, .map-msn{
+        flex-direction: column;
+    }
+
+    .grid{
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    .grid-teachers {
+        text-align: center;
+    }    
+    .grid img {
+        width: 100%;
+        height: auto;
+    }
+
+   
+}
+
+
+
+/*landscape*/
+@media (orientation: landscape) { 
+
+    
+    .flex, .gallery{
+        padding: 0 150px;
+    }
+   
+ 
+    .grid img {
+        max-width: 100%;
+        height: auto;
+    }
+    .grid p{
+        font-size: 14px;
+    }
+} 
