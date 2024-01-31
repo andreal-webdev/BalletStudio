@@ -205,72 +205,27 @@ h1, h3{
     
 }
 
-/*section middle*************************/
-.middle{
-    font-family: 'Dancing Script';
-    background-image:url(../img/bg3.jpeg);
-    height: 275px;
-    text-align: center;
-    margin:0;    
-    background-attachment: fixed;
-    color: #d7837f;
-}
-
-section.middle h1{
-    font-size: 2em;
-    padding-top: 130px;
-}
-
 /*flex boxes*******************************************/
 .price, .tittle{
-    margin: 40px;    
+     
     font-size: 60px;
-    text-align: center;
+    
     color: #d7837f;
     text-shadow: 10px 6px 10px #e5d2d1;
 }
 
-.flex{    
-    display: grid;
-    flex-wrap: wrap;
-    grid-template-columns: 1fr 1fr 1fr;
-    text-align: center;
-    gap: 5px; 
-    background-image:url(../img/bg3.jpeg);
-    background-repeat: no-repeat;
-    background-position:cover;    
-    background-attachment: fixed;   
-   
+.pricing-item {
+    transition: transform 0.3s ease-in-out;
 }
 
-.flex div{    
-    background-color:#da8681;
-    color: white;
-    padding: 10px;
-    margin: 20px auto;
-    border-radius: 10px;
-    box-shadow: 10px 10px 10px #e5d2d1;   
+.pricing-item:hover {
+    transform: scale(1.1);
 }
 
-/*Gallery*************************************************/
-
-.gallery{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin:10px auto 50px; 
-    
+.price-item{
+    background-color:#d7837f96 ;
 }
 
-.gallery img:hover, .class:hover{
-    opacity: 80%;
-    cursor: pointer;
-
-}
-
-.gallery img{
-    box-shadow: 10px 6px 10px #e5d2d1;
-}
 
 /*About Grid**************************************/
 .teachers{
@@ -472,9 +427,9 @@ ul.social{
     color:  #faa29d;
 }
 
-Media -------------------------------------------
 
-/* /* @media(max-width:576px){ */
+
+/* @media(max-width:576px){
     .navbar-nav{
         display: none;
     }
@@ -514,10 +469,10 @@ Media -------------------------------------------
         height: 300px; 
     }
     
-} */
-{}
+}
+{} */
 /*screen smaller than 768px */
-@media screen and (max-width:768px){
+/* @media screen and (max-width:768px){
     .home-header, .about-header, .contact-header{
         height: 40vh;
     }
@@ -543,12 +498,12 @@ Media -------------------------------------------
     }
 
    
-}
+} */
 
 
 
 /*landscape*/
-@media (orientation: landscape) { 
+/* @media (orientation: landscape) { 
 
     
     .flex, .gallery{
@@ -563,4 +518,4 @@ Media -------------------------------------------
     .grid p{
         font-size: 14px;
     }
-} 
+}  */
