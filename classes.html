@@ -4,43 +4,45 @@
         <title>The Toronto Ballet Studio</title>
         <meta name="description" content="In The Toronto Ballet Studio we offer ballet classes for different ages and experience. We are one of the best ballet schools according to The Toronto Choice Awards. This is place to express yourself">
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">       
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/lightbox.css">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="stylesheet" href="css/style.css">       
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Actor&display=swap" rel="stylesheet">
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/css/lightbox.min.css" rel="stylesheet">
     </head>
     <body>
         
-        <nav class="navbar">
-            <span class="open-slide" style="float:left">
-                <a href="#" onclick="openSideMenu()">
-                    <svg width="30" height="30">
-                        <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
-                        <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
-                        <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
-                    </svg>
+        <nav class="navbar navbar-expand-lg" style="background-color: #cf8a87">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/">
+                    <img src="img/logo.png" height="75" alt="">
                 </a>
-            </span>
-            
-            <ul class="navbar-nav" >
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="classes.html">Classes</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="index.html">Home</a></li>
-            </ul>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav" >
+                    <li>
+                        <a class="nav-link" href="/about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/classes.html">Classes </a>
+                    </li>
+                    
+                    <li>
+                        <a class="nav-link" href="/contact.html">Contact</a>
+                    </li>
+
+                
+                    </ul>
+                </div>
+            </div>
         </nav>
 
-        <div id="side-menu" class="side-nav">
-            <a href="#" class="btn-close" onclick="closeSideMenu()">&times;</a>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="classes.html">Classes</a>
-            <a href="contact.html">Contact</a>
-        </div>
-        
         <div id="home-h" class="home">
             <header>
                 
@@ -54,67 +56,110 @@
             </header>            
         </div>
 
-        <h1 class="tittle">Our classes</h1> 
+       
+        
+        <section class=" bg-light p-5 flex">
+            
+            <div class="container">
+                <h1 class="tittle">Our Classes</h1>
+        
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card-body pb-4 classes" style="width: 25rem; border: none;">
+                            <img class="card-img-top" src="img/kids.jpg" alt="Kids Ballet">
+                            <div class="card-body ml-4">
+                                <h1 class="card-title">Kids Ballet</h1>
+                                <p class="card-text">Absolute beginners for kids from 3 to 5 years old</p>
+                                <button class="btn btn" style="background-color: #f8caca;">Sign Up</button>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col-md-4">
+                        <div class="card-body pb-4 classes" style="width: 25rem; border: none;">
+                            <img class="card-img-top" src="img/elem1.jpeg" alt="Beginners 1">
+                            <div class="card-body ml-4">
+                                <h1 class="card-title">Beginners 1</h1>
+                                <p class="card-text">Absolute beginners for kids from 5 to 7 years old</p>
+                                <button class="btn btn" style="background-color: #f8caca;">Sign Up</button>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col-md-4">
+                        <div class="card-body pb-4 classes" style="width: 25rem; border: none;">
+                            <img class="card-img-top" src="img/kids10.jpeg" alt="Beginners 2">
+                            <div class="card-body ml-4">
+                                <h1 class="card-title">Beginners 2</h1>
+                                <p class="card-text">Absolute beginners for kids from 7 to 10 years old</p>
+                                <button class="btn btn" style="background-color: #f8caca;">Sign Up</button>
+                            </div>
+                        </div>
+                    </div>
 
-        <div class="classes">
-                       
+                    <div class="col-md-4">
+                        <div class="card-body pb-4 classes" style="width: 25rem; border: none;">
+                            <img class="card-img-top" src="img/advanced.jpg" alt="Beginners 2">
+                            <div class="card-body ml-4">
+                                <h1 class="card-title">Advanced</h1>
+                                <p class="card-text">Advanced level for people from 15 years old and</p>
+                                <button class="btn btn" style="background-color: #f8caca;">Sign Up</button>
+                            </div>
+                        </div>
+                    </div>
 
-            <div class="class">
-                <img src="img/kids.jpg" alt=" "height="260px" width="380px">
-                <h1>Kids Ballet</h1>                
-                <p>Absolute beginners for kids from 3 to 5 years old</p>
-                <button>Sign Up</button>
+                    <div class="col-md-4"> 
+                        <div class="card-body pb-4 classes" style="width: 25rem; border: none;">
+                            <img class="card-img-top" src="img/adults.jpg" alt="Beginners 2">
+                            <div class="card-body ml-4">
+                                <h1 class="card-title">Adults</h1>
+                                <p class="card-text">Ballet for adults, no previous experience necessary</p>
+                                <button class="btn btn" style="background-color: #f8caca;">Sign Up</button>
+                            </div>
+                        </div>
+                    </div>
+            
+                    
+            
+                </div>
             </div>
+          </section>
 
-            <div class="class">
-                <img src="img/elem1.jpeg" alt=" "height="260px" width="380px">
-                <h1>Beginners 1</h1>                
-                <p>Absolute beginners for kids from 5 to 7 years old</p>
-                <button>Sign Up</button>
+        <section class=" bg-light p-5 flex">
+            <h1 class="tittle">Gallery</h1>
+        
+
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/ballerina.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/fairy.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/group.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/group2.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/legs.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/shoes.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
             </div>
-
-            <div class="class">
-                <img src="img/kids10.jpeg" alt=" "height="260px" width="380px">
-                <h1>Beginners 2</h1>                
-                <p>Absolute beginners for kids from 7 to 10 years old</p>
-                <button>Sign Up</button>
-            </div>
-
-            <div class="class">
-                <img src="img/intermediate.jpeg" alt=" "height="260px" width="380px">
-                <h1>Intermediate</h1>                
-                <p>Intermediate for kids from 10 to 15 years old</p>
-                <button>Sign Up</button>
-            </div>
-
-            <div class="class">
-                <img src="img/advanced.jpg" alt=" "height="260px" width="380px">
-                <h1>Advanced</h1>                
-                <p>Advanced level for people from 15 years old and</p>
-                <button>Sign Up</button>
-            </div>
-
-            <div class="class">
-                <img src="img/adults.jpg" alt=" "height="260px" width="380px">
-                <h1>Adults</h1>                
-                <p>Ballet for adults, no previous experience necessary</p>
-                <button>Sign Up</button>
-            </div>
-
-        </div> 
-        <!--Lightbox-->
-
-        <h1 class="tittle">Gallery</h1>
-
-        <div class="gallery">
-            <a class="gal" href="img/ballerina.jpeg" data-lightbox="ballet" data-title="Cinderella"><img src="img/ballerina.jpeg" alt="ballerina-cinderella" height="260px" width="380px"></a>
-            <a class="gal" href="img/fairy.jpeg" data-lightbox="ballet" data-title="Night Fairy"><img src="img/fairy.jpeg" alt="balerrina-fairy" height="260px" width="380px"></a>
-            <a class="gal" href="img/group.jpeg" data-lightbox="ballet" data-title="Winter Show"><img src="img/group.jpeg" alt="Group of ballerinas possing" height="260px" width="380px"></a>
-            <a class="gal" href="img/group2.jpeg" data-lightbox="ballet" data-title="Ballerinas"><img src="img/group2.jpeg" alt="Ballerinas" height="260px" width="380px"></a>
-            <a class="gal" href="img/shoes.jpeg" data-lightbox="ballet" data-title="Ballet Shoes"><img src="img/shoes.jpeg" alt="Shoes" height="260px" width="380px"></a>
-            <a class="gal" href="img/legs.jpeg" data-lightbox="ballet" data-title="Releve"><img src="img/legs.jpeg" alt="Releve pose" height="260px" width="380px"></a>
-       </div>
-
+        </section>
 
        <footer>
             <div class="footer-content">
@@ -137,9 +182,12 @@
 
 
 
-        <script src="lightbox-plus-jquery.min.js"></script>
-        <script src="script.js"></script>
         
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@2.11.6/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/js/lightbox.min.js"></script>
+        <script src="script.js"></script>
         
     </body>
     

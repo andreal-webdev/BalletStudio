@@ -40,72 +40,6 @@ h1, h3{
     font-family: 'Dancing Script';
 }
 
-/*nav bar*************************************************/
-.navbar {
-    position: sticky;
-    background-color: #cf8a87;
-    overflow: hidden;
-    height: 63px;
-    position: sticky;
-    top: 0;
-    z-index: 1000; 
-}
-
-.navbar a {
-    float: right;
-    display: block;    
-    color: #fff;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 20px;    
-}
-
-.navbar ul {
-    margin: 8px 0 0 0;
-    list-style: none;    
-}
-
-.navbar a:hover{
-    background-color: #db7873;
-    color: #fff;
-}
-/*side navbar**************************************/
-.side-nav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1200;
-    top: 0;
-    left: 0;
-    background-color:  #d4b4b3a9;
-    opacity: 20;
-    overflow-x: hidden;
-    padding-top: 60px;
-    transition: 0.8s;
-    transition-timing-function: ease-in-out;
-}
-
-.side-nav a {
-    padding: 10px 10px 10px 30px;
-    text-decoration: none;
-    font-size: 30px;
-    color: #f8746d;
-    display: block;
-    transition: 0.3s;
-}
-
-.side-nav a:hover {
-    color: #fff;
-}
-
-.side-nav .btn-close {
-    position: absolute;
-    top: 40px;
-    right: 22px;
-    font-size: 36px;
-    margin-left: 50px;
-}
 
 /*Home header****************************************/
 
@@ -206,12 +140,10 @@ h1, h3{
 }
 
 /*flex boxes*******************************************/
-.price, .tittle{
-     
+.tittle{
     font-size: 60px;
-    
     color: #d7837f;
-    text-shadow: 10px 6px 10px #e5d2d1;
+
 }
 
 .pricing-item {
@@ -263,25 +195,25 @@ video {
     width: 100%;
     height: auto;    
 }
-/**Classes***********************************/
-.classes {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;   
-    justify-content: space-evenly;
-    box-shadow: 0 4px 8px 0 #e5d2d1;  
-    background-image:url(../img/bg.jpeg);
-    background-repeat: no-repeat;        
-    background-attachment: fixed;        
+/*card******************************/
+.card-body {
+    background-color: #f9efef;
+    margin-left: 20px
+  
 }
 
-.class{    
-    margin: 40px 0px;    
-    background-color: #ddd;
-    padding: 0 0 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px 0 #6b4d4d;  
+.classes{
+    transition: transform 0.3s ease-in-out;
 }
+
+
+
+.classes:hover {
+    transform: scale(1.1);
+}
+
+
+
 
 /*contact us******************************/
 fieldset{    
